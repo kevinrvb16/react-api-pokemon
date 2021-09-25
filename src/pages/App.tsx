@@ -4,10 +4,12 @@ function App() {
   return (
     <div>
       <h1>Meu site com react</h1>
-      <PokemonItem/>
-      <PokemonItem/>
-      <PokemonItem/>
-      <PokemonItem/>
+      <PokemonItem name = "pikachu"/>
+      <PokemonItem name = "charmander"/>
+      <PokemonItem name = "bulbasaur"/>
+      <PokemonItem name = "ditto"/>
+      <PokemonItem name = "delibird"/>
+      <PokemonItem name = "mantine"/>
     </div>
   );
 }

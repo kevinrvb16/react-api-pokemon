@@ -1,7 +1,12 @@
-function PokemonItem() {
+interface IProps {
+    name: string
+}
+
+function PokemonItem({name}: IProps) {
+
     return (
         <div>
-            <h2>Nome do Pokémon</h2>
+            <h2>{name}</h2>
         </div>
     )
 }
