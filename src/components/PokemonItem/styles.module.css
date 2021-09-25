@@ -1,0 +1,20 @@
+.background {
+    margin: 0 auto;
+    background-color: yellow;
+    width: 250px;
+    border-radius:6px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.background + .background {
+    margin-top:20px
+}
+
+.name {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
