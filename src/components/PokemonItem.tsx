@@ -2,7 +2,7 @@ interface IProps {
     name: string
 }
 
-function PokemonItem({name}: IProps) {
+const PokemonItem: React.FC<IProps> = ({ name } ) =>  {
 
     return (
         <div>
