@@ -6,12 +6,14 @@ import styles from './styles.module.css'
 
 function Home() {
 
-  api.get('pokemon')
-
+  const getAllPokemons = async () => {
+    const pokemons = await api.get('pokemon')
+    return pokemons
+  }
   return (
     <div className={styles.container}>
-      <img src={PokemonLogo} alt="Pokemon logo"/>
-      <PokemonItem name = "pikachu"/>
+      <img src={PokemonLogo} alt="Pokemon logo" />
+      <PokemonItem name = "pikachu" />
       <PokemonItem name = "charmander"/>
       <PokemonItem name = "bulbasaur"/>
       <PokemonItem name = "ditto"/>
