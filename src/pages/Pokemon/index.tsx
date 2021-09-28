@@ -29,6 +29,15 @@ const Pokemon: React.FC = () => {
     useEffect(() => {
         getPokemonInfo()
     }, [])
-    return <h1> Página do Pokemon: {pokemonName}</h1>
+    return (
+        <div className={styles.container}>
+        <h1>{pokemon?.name}</h1>
+        <img src={pokemon?.sprites.other['official-artwork'].front_default} alt=""></img>
+        <h2>Altura: {pokemon?.height}</h2>
+        <h2>Peso: {pokemon?.weight}</h2>
+        <h2>Tipos: {pokemon?.types.map((type) => type.type.name).join(', ')}</h2>
+        <h2>Habilidades: {pokemon?.abilities.map((ability) => ability.ability.name).join(', ')}</h2>
+        </div>
+    )
 }
 export default Pokemon
